@@ -96,7 +96,7 @@ nav a:active {
     transition: color 0.3s ease;
 }
 
-nav ul {
+#top-nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +105,7 @@ nav ul {
   font-size: 16px;
 }
 
-nav li {
+#top-nav li {
   width: 100px;
   text-align: center;
 }
