@@ -1,0 +1,328 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:link {
+  color: #636175;
+}
+
+a:visited {
+  color: #978de7;
+}
+
+a:hover {
+  color: #b9b3e8;
+  transition: all 0.3s;
+}
+
+a:active {
+    color: #4434bd; /* クリック中 */
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+/* 
+header
+=================================== */
+header {
+  position: fixed;
+  box-shadow: 0px 3px 4px rgba(89, 91, 113,.4);
+  width: 100%;
+  font-size: 85%;
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 100;
+  backdrop-filter: blur(7px); /* 背景をぼかす */
+  -webkit-backdrop-filter: blur(10px); /* Safari対応 */
+
+}
+
+ header h1 {
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #636175;
+}
+
+header a:visited {
+  color: #636175;
+}
+
+header a:hover {
+  color: #636175;
+  transition: all 0.3s;
+}
+
+header a:active {
+    color: #636175; /* クリック中 */
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+/* 
+nav
+=================================== */
+nav a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+nav a:link {
+  color: #636175;
+}
+
+nav a:visited {
+  color: #978de7;
+}
+
+nav a:hover {
+  color: #b9b3e8;
+  transition: all 0.3s;
+}
+
+nav a:active {
+    color: #4434bd; /* クリック中 */
+    transition: color 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+nav li {
+  width: 100px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* 
+main
+=================================== */
+
+h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+h3 {
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+
+#main {
+  width: 85%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+
+#main dd {
+padding-top: 7px;
+}
+
+
+
+
+
+
+/* 
+about me
+=================================== */
+
+#about-me {
+  margin-bottom: 80px;
+}
+
+#about-me dt {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#about-me span {
+  background: linear-gradient(to bottom, transparent 60%, #dfddf3 40%);
+}
+
+#about-me {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.icon {
+  width: 200px;
+  margin: auto;
+}
+
+.icon img {
+  width: 100%;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+}
+
+#migi,#hidari {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+
+
+
+
+
+
+/* 
+category
+=================================== */
+
+#category-wrapper {
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+  grid-auto-rows: minmax(200px, auto);
+  gap: 40px;
+}
+
+.category {
+  background-color: #fff;
+  box-shadow: 1px 3px 5px rgba(142, 144, 173, 0.4);
+  border-radius: 15px;
+  border: 0.5px solid rgb(236, 237, 243);
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.category:hover {
+  transform:translateY(5px);
+  transition: all 0.3s;
+}
+
+.category .category1 {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s ease; 
+}
+
+.category p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 7%;
+}
+
+
+.category .category-a {
+  position: absolute;
+  right: 15%;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #636175;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.category .category-a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #636175;  /* 上向き三角形を矢印として利用 */
+  transition: transform 0.3s ease;
+}
+
+/* ホバー時の動き */
+.category .category-a:hover::after {
+  transform: translateX(-50%) translateY(5px);
+  border-top-color: #4a4a5a; /* 好みで色変えてもOK */
+}
+
+.category .category-a:hover {
+  color: #b9b3e8; /* 文字色も変えるなら */
+  transition: all 0.3s;
+}
+
+.category .category-a:visited {
+  color: #978de7;
+}
+
+
+
+
+
+
+
+/* 
+footer
+=================================== */
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  color: #7f7d93;
+  background-color: #cecddc;
+  padding: 40px;
+}
+
+#footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#footer-nav li {
+    position: relative;
+}
+
+footer a:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+
+/* 2つ目以降のリンクの前に区切り線を表示 */
+#footer-nav li:not(:first-child)::before {
+    content: "|";
+    position: absolute;
+    left: -2em; /* 調整ポイント：リンクの中央に縦棒が来るように */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4a4a5a; /* お好みの色にしてね */
+    font-size: 0.8em;
+}
+
+#footer-nav a {
+    font-size: 0.9rem;
+}
